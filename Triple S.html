@@ -1,0 +1,166 @@
+<html>
+
+<header>
+<title> Triple S</title>
+</header>
+
+<head>
+<style>
+
+nav{
+	background: linear-gradient(50deg, #ccffff, #ffcccc);
+	height: 80px;
+	width: 100%;
+}
+label.logo {
+	color: pink;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a {
+	color: skyblue;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+a.active, a:hover {
+	background: #ddd;
+	transition: .5s;
+}
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
+}
+@media (max-width: 952px) {
+	label.logo {
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a {
+		font-size: 16px;
+	}
+}
+@media (max-width: 858px) {
+	.checkbtn {
+		display: block;
+	}
+	ul {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: linear-gradient(50deg, #ccffff, #ffcccc);
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s; 
+	}
+	nav ul li {
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a {
+		font-size: 20px;
+	}
+	a:hover,a.active {
+		background: none;
+		color: #0082e6;
+	}
+	#check:checked ~ ul {
+		left: 0;
+	}
+}
+
+
+
+h1 {
+color : grey;
+font-size: 40;
+font-family: 'Brush Script MT' , cursive;
+align: center;
+}
+
+body{
+background: linear-gradient(50deg, #ffcccc, #ccffff);
+}
+p {
+text-align: center;
+font-size: 20px;
+}
+.container {
+width: 70%;
+margin-left: auto;
+margin-right: auto; 
+}
+
+</style>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+<div class="main">
+
+<nav>
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+<i class="fas fa-bars"></i>
+</label>
+<label class="logo">Triple S</label>
+<ul>
+<li> <a class="active" href= "Triple S.html"> Home </a> </li>
+<li> <a href= "About Us.html"> Triple S </a> </li>
+<li> <a href= "Gallery.html"> Gallery </a> </li>
+<li> <a href= "Contacts.html"> Contacts </a> </li>
+</ul>
+</nav>
+
+
+<h1 font="500"> Welcome to Triple S</h1>
+
+<div class="container">
+
+<h1 align="center"> Who are we? </h1>
+ <p> Smiley Smoothies and Skates aka Triple S is both a juice bar and a skating rink, the place for all the fun you need.</p>
+ <p> We are the number one place for you to roll your worries away and laugh your heart out over a chilled smoothie with fam 
+ and friends both physically and virtually.</p>
+ 
+ <h1 align="center"> What makes us different? </h1>
+ <p> We are dedicated to giving you the best smoothies, fruit juices and roller skating experience with a focus on uniqueness, customer service and fun. </p>
+ 
+ <h1 align="center"> Then and now! </h1>
+ <p> Founded in 2021 by Lys Ilunga, Triple S has come a long way, from its begennings in Lys's grandma's kitchen where she started selling smoothies to her siblings
+ and now serve in many locations across the city near high schools and tertiary education institutions for the youth to have a relaxed place to escape the daily 
+ stress. </p>
+
+<p> We hope you enjoy our services as much as we enjoy offering them to you <br>
+In case there is something you would like to know, please head over to our social media platforms and all you need to know will be provided to you. </p>
+
+<p> Thank you ;) </p>
+ 
+ </div>
+ 
+ </div>
+ 
+</body>
+
+</html>
