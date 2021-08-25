@@ -1,0 +1,357 @@
+<html>
+<header>
+<title>Contacts</title>
+</header>
+<body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+
+<style>
+
+nav{
+	background: linear-gradient(50deg, #ccffff, #ffcccc);
+	height: 80px;
+	width: 100%;
+}
+label.logo {
+	color: pink;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a {
+	color: skyblue;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+a.active, a:hover {
+	background: #ddd;
+	transition: .5s;
+}
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
+}
+@media (max-width: 952px) {
+	label.logo {
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a {
+		font-size: 16px;
+	}
+}
+@media (max-width: 858px) {
+	.checkbtn {
+		display: block;
+	}
+	ul {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: linear-gradient(50deg, #ccffff, #ffcccc);
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s; 
+	}
+	nav ul li {
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a {
+		font-size: 20px;
+	}
+	a:hover,a.active {
+		background: none;
+		color: #0082e6;
+	}
+	#check:checked ~ ul {
+		left: 0;
+	}
+}
+				
+h1 {
+color : grey;
+font-size: 40;
+font-family: 'Brush Script MT' , cursive;
+}
+
+p { 
+text-align: ;
+font-size: 20px;
+}
+body{
+background: linear-gradient(35deg, #ccffff, #ffcccc);
+}
+				
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+				
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+.contact{
+position: relative;
+min-height: 90vh;
+padding: 50px 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background: url(smoothies and skates.jpeg);
+background-size: cover;
+}
+.contact .content 
+{
+max-width: 800px;
+text-align: center;
+}
+.contact .content h2
+{
+font-size; 80px;
+font-weight: 700;
+color: #;
+}
+.contact .content p
+{
+font-weight: 300;
+color: #;
+}
+.container 
+{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 50px;
+}
+.container .contactInfo
+{
+width: 50%;
+display: flex;
+flex-direction: column;
+}
+.container .contactInfo .box
+{
+position: relative;
+padding: 20px 0;
+display: flex;
+}
+.container .contactInfo .box .icon
+{
+min-width: 60px;
+height: 60px;
+bacground: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+font-size: 22px;
+}
+.container .contactInfo .box .text
+{
+display: flex;
+margin-left: 20px;
+font-size: 16px;
+color: # ;
+flex-direction: column;
+font-weight: 300;
+}
+.container .contactInfo .box .text h3
+{
+font-weight: 700;
+color: #00bcd4;
+}
+.contactForm
+{
+width: 40%;
+padding: 40px;
+background: linear-gradient(90deg, #ccffff, #ffcccc);
+}
+.contactForm h2 
+{
+font-size: 30px;
+color: #333;
+font-weight: 600;
+font-family: italic;
+}
+.contactForm .inputBox
+{
+position: relative;
+width: 100%;
+margin-top: 10px; 
+}
+.contactForm .inputBox input, 
+.contactForm .inputBox textarea
+{
+width: 100%;
+padding: 5px 0;
+font-size: 16px;
+margin: 10px 0;
+border: none;
+border-bottom: 2px solid #333;
+outline: none;
+resize: none;
+}
+.contactForm .inputBox span
+{
+position: absolute;
+left: 0;
+padding: 5px 0;
+font-size: 16px;
+margin: 10px 0;
+pointer-events: none;
+transition: 0.5s;
+color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+color: #e91e63;
+font-size: 12px;
+transform: translateY(-20px);
+}
+.contactForm .inputBox input [type="submit"]
+{
+width: 100px;
+background: #00bcd4;
+color: #fff;
+border: none;
+cursor: pointer;
+padding: 10px;
+font-size: 18px;
+}
+@media(max-width:991px)
+{
+.contact
+{
+padding: 50px;
+}
+.container
+{
+flex-direction: column;
+}
+.container .contactInfo
+{
+margin-bottom: 40px;
+}
+.container .contactInfo, 
+.contactForm
+{
+width: 100%;
+}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+<i class="fas fa-bars"></i>
+</label>
+<label class="logo">Triple S</label>
+<ul>
+<li>
+<a href="Triple S.html">Home</a>
+</li>
+<li>
+<a href="About Us.html">Triple S</a>
+</li>
+<li>
+<a href="Gallery.html">Gallery</a>
+</li>
+<li>
+<a href="Contacts.html">Contacts</a>
+</li>
+</ul>
+</nav>
+
+<h1 align="center" color="grey">Welcome to CHAT with Triple S</h1>
+<section class="contact">
+<div class="content">
+<h2>Talk to Us</h2>
+<p>The place where you talk and we listen, or more practically, you write and we read. <br>
+Leave a message! </p>
+</div>
+<div class="container">
+<div class="contactInfo">
+<div class="box">
+<div class="icon">
+<i class="fas fa-map-marker-alt"></i>
+</div>
+<div class="text">
+<h3>Address</h3>
+<p>04 Dunbar Road<br>Blairgowrie<br>Randburg</p>
+</div>
+</div>
+<div class="box">
+<div class="icon">
+<i class="fa fa-envelope-o" aria-hidden="true"></i>
+</div>
+<div class="text">
+<h3>Email</h3>
+<p>lysilunga17@gmail.com</p>
+</div>
+</div>
+<div class="box">
+<div class="icon">
+<i class="fa fa-phone" aria-hidden="true"></i>
+</div>
+<div class="text">
+<h3>Phone</h3>
+<p>067-063-2332</p>
+</div>
+</div>
+</div>
+<div class="contactForm">
+<form>
+<h2>Send message</h2>
+<div class="inputBox">
+<input type="text" name="" required="required">
+<span>Name</span>
+</div>
+<div class="inputBox">
+<input type="text" name="" required="required">
+<span>Email</span>
+</div>
+<div class="inputBox">
+<textarea required="required"></textarea>
+<span>Type your message ...</span>
+</div>
+<div class="inputBox">
+<input type="submit" name="" value="Send">
+</div>
+</form>
+</div>
+</div>
+</section>
+</body>
+</html>			

@@ -1,0 +1,540 @@
+<html>
+
+<header>
+<title> About Us </title>
+</header>
+
+<body>
+<head>
+<style>
+
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
+@import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
+
+nav{
+	background: linear-gradient(50deg, #ccffff, #ffcccc);
+	height: 80px;
+	width: 100%;
+}
+label.logo {
+	color: pink;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a {
+	color: skyblue;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+nav ul ul {
+	position: absolute;
+	display: none;
+	top: 60px;
+	background: linear-gradient(35deg, #ccffff, #ffcccc);
+}
+nav ul li:hover > ul {
+	display: block;
+}
+nav ul ul li {
+	width: 150px;
+	float: none;
+	display: block;
+	position: relative;
+}
+
+
+a.active, a:hover {
+	background: #ddd;
+	transition: .5s;
+}
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
+}
+@media (max-width: 952px) {
+	label.logo {
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a {
+		font-size: 16px;
+	}
+}
+@media (max-width: 858px) {
+	.checkbtn {
+		display: block;
+	}
+	ul {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: linear-gradient(50deg, #ccffff, #ffcccc);
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s; 
+	}
+	nav ul li {
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a {
+		font-size: 20px;
+	}
+	a:hover,a.active {
+		background: none;
+		color: #0082e6;
+	}
+	#check:checked ~ ul {
+		left: 0;
+	}
+}
+
+h1 {
+color : ;
+font-size: 40;
+font-family: 'Brush Script MT' , cursive;
+}
+
+body{
+background: linear-gradient(35deg, #ccffff, #ffcccc);
+}
+p {
+text-align: center;
+font-size: 20px;
+}
+.container {
+	width: 70% ;
+	margin-left: auto ;
+	margin-right: auto ;
+	background:;
+}
+
+.section-title h2 {
+	transform: uppercase;
+}
+.section-title {
+	margin: 3% 0;
+}
+.section-title p {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.single-team {
+	padding-bottom: 10px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	box-shadow: 5px 5px 15px #000;
+}
+.team-img {
+	position: relative;
+	z-index: 5;
+	overflow: hidden;
+}
+.team-img img {
+	width: 100%;
+	transition: .3s;
+}
+.single-team:hover .team-img img {
+	scale: (1,1);
+}
+team-content {
+	height: 40px;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	overflow: hidden;
+	bottom: 0;
+	transform: all 0.4s;
+	background: linear-gradient(35deg, #ccffff, #ffcccc);
+	z-index: 5;
+}
+.single-team:hover .team-content {
+	height: 150px;
+}
+.team-info {
+	padding: 5px 20px 5px 20px;
+	transform: all .5s;
+}
+.single-team:hover .team-content {
+	background: #000;
+}
+.single-team .team-info h3 {
+	text-transform: uppercase;
+	color:;
+	font-size: 16px;
+	margin: 5px;
+}
+.single-team:hover .team-info h3 {
+	color: ;
+	font-weight: bold;
+}
+.team-info p {
+	margin-top: 15px;
+	color: ;
+}
+.single-team-text p{
+	margin-top: 5px;
+}
+.team-text {
+	color: ;
+	padding: 0 10px 5px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.wrapper {
+	width: 1200px;
+	margin: 100px auto;
+}
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.single-menu {
+	flex-basis: 580px;
+	margin-bottom:  40px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #ddd;
+}
+.single-menu:nth-child(5), .single-menu:nth-child(6){
+  border-bottom:0;
+}
+.single-menu{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+.single-menu:hover img{
+  border-radius:0;
+}
+.single-menu img{
+  max-width:180px;
+  margin-right:30px;
+  border-radius:50%;
+  border:1px solid #ddd;
+  padding:3px;
+  transition:.5s;
+}
+.single-menu h4{
+  text-transform:capitalize;
+  font-size:22px;
+  border-bottom:1px dashed #333;
+  margin-bottom:5px;
+  padding-bottom:5px;
+}
+.single-menu h4 span{
+  float:right;
+  color:#ff7720;
+  font-style:italic;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: pink;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+<i class="fas fa-bars"></i>
+</label>
+<label class="logo">Triple S</label>
+<ul>
+<li> <a href= "Triple S.html"> Home </a> </li>
+<li> <a class="active" href= "About Us.html"> Triple S </a> 
+	<ul>
+		<li> <a href= "#ourstory"> STORY</a> </li>
+		<li> <a href= "#ourteam"> TEAM</a> </li>
+		<li> <a href= "#ourmenu"> MENU </a> </li>
+	</ul>
+</li>
+<li> <a href= "Gallery.html"> Gallery </a> </li>
+<li> <a href= "Contacts.html"> Contacts </a> </li>
+</ul>
+</nav>
+
+<div class="container">
+<h1 align="center"> Welcome to ABOUT Triple S</h1>
+<p> Here's where you learn a little about where Triple S came from, where we are at and a little of where we 
+are going, you can find all our service offerings and every details </P>
+<a name="ourstory"><h1 align="center" color="pink"> Our story ... </a> </h1>
+<p> It had always been all about the love of a banana based smoothie recipe that the founder, Lys and her siblings enjoyed like crazy <br>
+As a girl she was always waiting for the time all the family friends would gather under the night sky around a table filled with glasses full of the very tasty 
+smoothies her mama made but the excitement was mostly for the jokes and laughter that accompanied those chilled moments as the climax was the fight over who will have 
+what will
+be left in the blender. <br> She then decided that when she grows up, eveybody would have a taste of the legendary "Jus de Banane".  </p>
+
+<p>The rink came about from a show based on a group of teenagers passionate about roller skating that she really enjoyed, even though she was not practicing the sport.
+ <br> Believing that nothing is impossible she mastered the courage to put on a pair of roller skates, fell a couple of times, actually, many times but finally managed to
+ stand without losing her balance until she became an above average roller skater.</p>
+ 
+ <p> The Triple S was designed for you to cool down with a glass of chilled whatever after a long exercise or warm yourself with a hot drink or fill your tummy after 
+ taking spins for fun, or maybe just meet up with friends to socialize with beautiful music in the background to accompany the chats that will be awesome memories 
+ in future. </p>
+ <p><i> Out of an ambitious dreamer, the Triple S came to existence. </i> </p>
+</div>
+
+<div class="team-area">
+	<div class="container">
+
+		<div class="row">
+		
+			<div class="col-md-12">
+				<div class="section-title text-center">
+					<a name="ourteam"><h1 align="center">Our team </a> </h1>
+					<p>Meet Our Talented team members</p>
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+			<div class="single-team">
+				<div class="team-img">
+				<img src="lys13.jpg">
+				</div>
+				<div class="team-info">
+					<h3> Lys Ntumba </h3>
+					<p><u> Web developper</u> </p>
+				</div>
+				<p class="team-text"></p>
+			</div>
+			</div>
+			
+
+            <div class="col-md-3">
+			<div class="single-team">
+				<div class="team-img">
+				<img src="peace12.jpeg">
+				</div>
+				<div class="team-info">
+					<h3> Peace Musau </h3>
+					<p><u> Chemical engineer</u> </p>
+				</div>
+				<p class="team-text"></p>
+			</div>
+			</div>
+		
+		<div class="col-md-3">
+			<div class="single-team">
+				<div class="team-img">
+				<img src="winner.jpeg">
+				</div>
+				<div class="team-info">
+					<h3> Winner Ngoya </h3>
+					<p> <u> Fashion designer</u> </p>
+				</div>
+				<p class="team-text"></p>
+			</div>
+			</div>
+		
+		
+		<div class="col-md-3">
+			<div class="single-team">
+				<div class="team-img">
+				<img src="esther1.jpg">
+				</div>
+				<div class="team-info">
+					<h3> Esther Musau</h3>
+					<p> <u>Interior designer</u> </p>
+				</div>
+				<p class="team-text"></p>
+			</div>
+			</div>
+			
+		
+		</div>
+	</div>
+</div>
+ <br>
+ 
+<div class="wrapper"> 
+<a name="ourmenu"><h1 align="center" color="pink"> Our menu </a></h1>
+<br>
+<p> <b> HEALTHY FOOD, HEALTHY LIFE </b></p>
+<br>
+
+<div class="menu">
+	<div class="single-menu">
+		<img src="bananaM.jpg" alt="">
+		<div class="menu-content">
+			<h4> Banana Smoothie <span>R 25 </span> </h4>
+			<p> The House's traditional recipe</p>
+		</div>
+	</div>
+	
+	<div class="single-menu">
+		<img src="chocolateM.jpg" alt="">
+		<div class="menu-content">
+			<h4> Chocolate Smoothie <span>R 25 </span> </h4>
+			<p></p>
+		</div>
+	</div>
+	
+	<div class="single-menu">
+		<img src="strawberriesM.jpg" alt="">
+		<div class="menu-content">
+			<h4> Strawberries Smoothie <span>R 25 </span> </h4>
+			<p></p>
+		</div>
+	</div>
+	
+	<div class="single-menu">
+		<img src="mangoJ.jpg" alt="">
+		<div class="menu-content">
+			<h4> Mango Juice <span>R 25 </span> </h4>
+			<p></p>
+		</div>
+	</div>
+	
+	<div class="single-menu">
+		<img src="OrangeJ.jpeg" alt="">
+		<div class="menu-content">
+			<h4> Orange Juice<span>R 25 </span> </h4>
+			<p></p>
+		</div>
+	</div>
+	
+	<div class="single-menu">
+		<img src="AppleJ2.jpg" alt="">
+		<div class="menu-content">
+			<h4> Apple Juice<span>R 25 </span> </h4>
+			<p></p>
+		</div>
+	</div>
+	
+	<div class="single-menu">
+		<img src="sausagesand.jpg" alt="">
+		<div class="menu-content">
+			<h4> Sausage Sandwich <span>R 25 </span> </h4>
+			<p> </p>
+		</div>
+	</div>
+	
+	<div class="single-menu">
+		<img src="CMsand.jpg" alt="">
+		<div class="menu-content">
+			<h4> Chicken mayo sandwich<span>R 25 </span> </h4>
+			<p> </p>
+		</div>
+	</div>
+	
+	<div class="single-menu">
+		<img src="EMsand.jpg" alt="">
+		<div class="menu-content">
+			<h4> Egg and mayo sandwich<span>R 25 </span> </h4>
+			<p></p>
+		</div>
+	</div>
+	
+	<div class="single-menu">
+		<img src="strawberryS.jpg" alt="">
+		<div class="menu-content">
+			<h4> Strawbery Milkshake<span>R 25 </span> </h4>
+			<p></p>
+		</div>
+	</div>
+	
+	<div class="single-menu">
+		<img src="oreoS.jpg" alt="">
+		<div class="menu-content">
+			<h4> Oreo Shake<span>R 25 </span> </h4>
+			<p></p>
+		</div>
+	</div>
+	
+	<div class="single-menu">
+		<img src="chocolateS.jpg" alt="">
+		<div class="menu-content">
+			<h4> Chocolate Milkshake <span>R 25 </span> </h4>
+			<p></p>
+		</div>
+	</div>
+	
+	<div class="single-menu">
+		<img src="bananaS.jpg" alt="">
+		<div class="menu-content">
+			<h4> Banana Shake  <span> R 25 </span> </h4>
+			<p></p>
+		</div>
+	</div>
+	
+		<div class="single-menu">
+		<img src="Chilled-Mixed-Fruit.jpg" alt="">
+		<div class="menu-content">
+			<h4> Fruit mix <span> R 25 </span> </h4>
+			<p></p>
+		</div>
+	</div>
+	
+</div>
+
+</div> 
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
